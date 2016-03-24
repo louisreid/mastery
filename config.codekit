@@ -3704,6 +3704,39 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/iphone-filming.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 396550,
+		"inputAbbreviatedPath": "\/img\/iphone-filming.png",
+		"outputAbbreviatedPath": "\/img\/iphone-filming.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/iphone-student-profile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 196469,
+		"inputAbbreviatedPath": "\/img\/iphone-student-profile.png",
+		"outputAbbreviatedPath": "\/img\/iphone-student-profile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/iphone-teacher-feedback.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 256639,
+		"inputAbbreviatedPath": "\/img\/iphone-teacher-feedback.png",
+		"outputAbbreviatedPath": "\/img\/iphone-teacher-feedback.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/logo-mastery.png": {
 		"fileType": 32768,
 		"ignore": 0,

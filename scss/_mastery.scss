@@ -3,9 +3,6 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
-h3 {
-	text-align: center;
-}
 
 .fill-height {
 	height: 100vh;
@@ -15,13 +12,15 @@ h3 {
 // Product Hero
 .product-hero {
 	// @extend .fill-height;
+	background-color: black;
 	video {
 		width:100%;
 	}
 }
 
 .product-hero__middle {
-	color: #333;
+	color: $white;
+	background-color: $gold;
 }
 
 .product-hero__logo {
@@ -35,21 +34,55 @@ h3 {
 }
 
 .product-hero__video {
+	opacity: 0.6;
+	background-color: black;
 }
 
 // Callouts
 .callout {
 	p {
+		font-family: $header-font-family;
     font-size: 1.4em;
-    padding: 25px;
+    padding: 1.3rem;
 	}
 }
 .callout.secondary {
 	background-color: $black;
 }
+.callout--mockup {
+	background-color: $peach;
+	position: relative;
+}
+
+.callout--mockup__text {
+	padding: 2rem;
+	// @include vertical-center;
+}
+.callout--mockup__text--right {
+	// @extend .callout--mockup__text;
+	// width: 40%;
+}
+
+.callout--mockup__image {
+	padding: 2rem;
+}
+
+// Mockups
+#mockup-student-record {
+	background-color: $peach;
+}
+#mockup-teacher-feedback {
+	background-color: $white;
+}
+#mockup-student-profile {
+	background-color: $white;
+}
 
 // FAQ's
 .faq {
+	h3 {
+		text-align: center;
+	}
 	.row {
 		padding: 30px;
 	}

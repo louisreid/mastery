@@ -46,9 +46,10 @@
 // ---------
 $purple: #53297A;
 $peach: #FEE0BF;
+$gold: #DFA010;
 
 // $global-font-size: 100%;
-$global-font-size: 106.25%;
+$global-font-size: 141.66625%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
@@ -63,7 +64,8 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
-$body-background: $peach;
+$body-background: $gold;
+// $body-background: $peach;
 $body-font-color: $black;
 $body-font-family: 'Open Sans', 'Ubuntu', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
@@ -105,27 +107,19 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: 'Ubuntu', $body-font-family;
 // $header-font-weight: $global-weight-normal;
 $header-font-weight: bold;
 $header-font-style: normal;
-$font-family-monospace: 'Ubuntu', Consolas, 'Liberation Mono', Courier, monospace;
+$font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
   small: (
     'h1': 24,
     'h2': 20,
-    'h3': 17,
-    'h4': 17,
-    'h5': 17,
-    'h6': 17,
   ),
   medium: (
     'h1': 48,
     'h2': 40,
-    'h3': 17,
-    'h4': 17,
-    'h5': 17,
-    'h6': 17,
   ),
 );
 $header-color: inherit;
@@ -266,14 +260,15 @@ $buttongroup-expand-max: 6;
 // -----------
 
 // $callout-background: $white;
-$callout-background: $purple;
+$callout-background: $white;
 $callout-background-fade: 0%;
 // $callout-border: 1px solid rgba($black, 0.25);
 $callout-border: none;
-$callout-margin: 0 0 1rem 0;
+// $callout-margin: 0 0 1rem 0;
+$callout-margin: 0;
 $callout-padding: 1rem;
 // $callout-font-color: $body-font-color;
-$callout-font-color: $white;
+$callout-font-color: $black;
 $callout-font-color-alt: $body-background;
 $callout-radius: $global-radius;
 $callout-link-tint: 30%;
