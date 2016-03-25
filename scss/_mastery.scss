@@ -8,7 +8,6 @@
 	height: 100vh;
 }
 
-
 // Product Hero
 .product-hero {
 	// @extend .fill-height;
@@ -36,30 +35,65 @@
 .product-hero__video {
 	opacity: 0.6;
 	background-color: black;
+	display: block;
+	object-fit:cover;
+	height: 200px;
+}
+
+.product-hero__video-container {
+	overflow: hidden;
+}
+
+.product-hero__videos-replacement {
+	display: none;
+	@include breakpoint(small only) {
+		display: block;
+	}
+}
+
+.product-hero__videos-lower, .product-hero__videos-higher {
+	@include breakpoint(small only) {
+		display: none;
+	}
 }
 
 // Callouts
 .callout {
 	p {
 		font-family: $header-font-family;
-    font-size: 1.4em;
-    padding: 1.3rem;
+    // font-size: 1.4em;
+    // padding: 1.3rem;
+    @include breakpoint(small only) {
+    	font-size: 0.8rem;
+    }
+	}
+	h2 {
+		font-weight: 300;
+		@include breakpoint(medium up) {
+			padding: 1.3rem;	
+		}
 	}
 }
 .callout.secondary {
 	background-color: $black;
 }
 .callout--mockup {
+	@extend .callout;	
 	background-color: $peach;
 	position: relative;
 }
 .callout--mockup__text {
 	padding: 2rem;
-	@include vertical-center;
+	@include breakpoint(medium up) {
+		@include vertical-center;
+	}
 }
 .callout--mockup__text--right {
-	@extend .callout--mockup__text;
-	width: 40%;
+	padding: 2rem;
+	@include breakpoint(medium up) {
+		@include vertical-center;
+		width: 40%;
+	}
 }
 
 .callout--mockup__image {
@@ -84,12 +118,18 @@
 	.faq__inner {
 		background-color: $white;
 		padding: 2rem;
+		@include breakpoint(small only) {
+			padding: 1rem;
+		}
 	}
 	h3 {
 		text-align: center;
 	}
 	.row {
 		padding: 30px;
+	}
+	@include breakpoint(small only) {
+		font-size: 0.8rem;
 	}
 }
 
@@ -98,20 +138,25 @@
 	.signup__text {
 		color: $white;
 	}
-	
+
 }
 
 // Footer
 footer {
 	font-size: 0.8em;
-	.footer__logo {
-		padding: 50px;
-	}
-	.footer__contact, .footer__detail{
-		padding: 40px 0px;
-	}
 	.footer__detail {
 		text-align: right;
+	}
+	.footer__logo {
+		padding: 2rem;
+	}
+	@include breakpoint(medium up) {
+		.footer__logo {
+			padding: 50px;
+		}
+		.footer__contact, .footer__detail{
+			padding: 40px 0px;
+		}
 	}
 }
 

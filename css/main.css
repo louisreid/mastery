@@ -1759,7 +1759,7 @@ h2 {
     font-size: 2.1176532872rem; }
 
   h2 {
-    font-size: 1.7647110727rem; } }
+    font-size: 1.5441221886rem; } }
 a {
   color: #53297A;
   text-decoration: none;
@@ -2495,7 +2495,7 @@ select {
         display: block;
         margin-right: 0; } }
 
-.callout {
+.callout, .callout--mockup {
   margin: 0;
   padding: 1rem;
   border: none;
@@ -2503,26 +2503,26 @@ select {
   position: relative;
   color: #0a0a0a;
   background-color: #fefefe; }
-  .callout > :first-child {
+  .callout > :first-child, .callout--mockup > :first-child {
     margin-top: 0; }
-  .callout > :last-child {
+  .callout > :last-child, .callout--mockup > :last-child {
     margin-bottom: 0; }
-  .callout.primary {
+  .callout.primary, .primary.callout--mockup {
     background-color: #53297a; }
-  .callout.secondary {
+  .callout.secondary, .secondary.callout--mockup {
     background-color: #fee0bf; }
-  .callout.success {
+  .callout.success, .success.callout--mockup {
     background-color: #3adb76; }
-  .callout.warning {
+  .callout.warning, .warning.callout--mockup {
     background-color: #ffae00; }
-  .callout.alert {
+  .callout.alert, .alert.callout--mockup {
     background-color: #ec5840; }
-  .callout.small {
+  .callout.small, .small.callout--mockup {
     padding-top: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 0.5rem; }
-  .callout.large {
+  .callout.large, .large.callout--mockup {
     padding-top: 3rem;
     padding-right: 3rem;
     padding-bottom: 3rem;
@@ -4394,28 +4394,58 @@ table.hover tr:nth-of-type(even):hover {
 
 .product-hero__video {
   opacity: 0.6;
-  background-color: black; }
+  background-color: black;
+  display: block;
+  object-fit: cover;
+  height: 200px; }
 
-.callout p {
-  font-family: "Ubuntu", "Open Sans", "Ubuntu", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-size: 1.4em;
-  padding: 1.3rem; }
+.product-hero__video-container {
+  overflow: hidden; }
 
-.callout.secondary {
+.product-hero__videos-replacement {
+  display: none; }
+  @media screen and (max-width: 39.9375em) {
+    .product-hero__videos-replacement {
+      display: block; } }
+
+@media screen and (max-width: 39.9375em) {
+  .product-hero__videos-lower, .product-hero__videos-higher {
+    display: none; } }
+
+.callout p, .callout--mockup p {
+  font-family: "Ubuntu", "Open Sans", "Ubuntu", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+  @media screen and (max-width: 39.9375em) {
+    .callout p, .callout--mockup p {
+      font-size: 0.8rem; } }
+.callout h2, .callout--mockup h2 {
+  font-weight: 300; }
+  @media screen and (min-width: 40em) {
+    .callout h2, .callout--mockup h2 {
+      padding: 1.3rem; } }
+
+.callout.secondary, .secondary.callout--mockup {
   background-color: #0a0a0a; }
 
 .callout--mockup {
   background-color: #FEE0BF;
   position: relative; }
 
-.callout--mockup__text, .callout--mockup__text--right {
-  padding: 2rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%); }
+.callout--mockup__text {
+  padding: 2rem; }
+  @media screen and (min-width: 40em) {
+    .callout--mockup__text {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); } }
 
 .callout--mockup__text--right {
-  width: 40%; }
+  padding: 2rem; }
+  @media screen and (min-width: 40em) {
+    .callout--mockup__text--right {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40%; } }
 
 .callout--mockup__image {
   padding: 2rem; }
@@ -4435,19 +4465,28 @@ table.hover tr:nth-of-type(even):hover {
   .faq .faq__inner {
     background-color: #fefefe;
     padding: 2rem; }
+    @media screen and (max-width: 39.9375em) {
+      .faq .faq__inner {
+        padding: 1rem; } }
   .faq h3 {
     text-align: center; }
   .faq .row {
     padding: 30px; }
+  @media screen and (max-width: 39.9375em) {
+    .faq {
+      font-size: 0.8rem; } }
 
 .signup .signup__text {
   color: #fefefe; }
 
 footer {
   font-size: 0.8em; }
-  footer .footer__logo {
-    padding: 50px; }
-  footer .footer__contact, footer .footer__detail {
-    padding: 40px 0px; }
   footer .footer__detail {
     text-align: right; }
+  footer .footer__logo {
+    padding: 2rem; }
+  @media screen and (min-width: 40em) {
+    footer .footer__logo {
+      padding: 50px; }
+    footer .footer__contact, footer .footer__detail {
+      padding: 40px 0px; } }
