@@ -4408,25 +4408,40 @@ table.hover tr:nth-of-type(even):hover {
   background-color: #FEE0BF;
   position: relative; }
 
-.callout--mockup__text {
-  padding: 2rem; }
+.callout--mockup__text, .callout--mockup__text--right {
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.callout--mockup__text--right {
+  width: 40%; }
 
 .callout--mockup__image {
   padding: 2rem; }
 
 #mockup-student-record {
-  background-color: #FEE0BF; }
+  background-color: #fefefe; }
 
 #mockup-teacher-feedback {
-  background-color: #fefefe; }
+  background-color: #fefefe;
+  background-image: url("../img/pattern-wov.png"); }
 
 #mockup-student-profile {
   background-color: #fefefe; }
 
-.faq h3 {
-  text-align: center; }
-.faq .row {
-  padding: 30px; }
+.faq {
+  padding: 3rem 0; }
+  .faq .faq__inner {
+    background-color: #fefefe;
+    padding: 2rem; }
+  .faq h3 {
+    text-align: center; }
+  .faq .row {
+    padding: 30px; }
+
+.signup .signup__text {
+  color: #fefefe; }
 
 footer {
   font-size: 0.8em; }

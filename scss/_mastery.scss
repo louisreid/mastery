@@ -53,14 +53,13 @@
 	background-color: $peach;
 	position: relative;
 }
-
 .callout--mockup__text {
 	padding: 2rem;
-	// @include vertical-center;
+	@include vertical-center;
 }
 .callout--mockup__text--right {
-	// @extend .callout--mockup__text;
-	// width: 40%;
+	@extend .callout--mockup__text;
+	width: 40%;
 }
 
 .callout--mockup__image {
@@ -69,10 +68,11 @@
 
 // Mockups
 #mockup-student-record {
-	background-color: $peach;
+	background-color: $white;
 }
 #mockup-teacher-feedback {
 	background-color: $white;
+	background-image: url('../img/pattern-wov.png');
 }
 #mockup-student-profile {
 	background-color: $white;
@@ -80,6 +80,11 @@
 
 // FAQ's
 .faq {
+	padding: 3rem 0;
+	.faq__inner {
+		background-color: $white;
+		padding: 2rem;
+	}
 	h3 {
 		text-align: center;
 	}
@@ -90,7 +95,10 @@
 
 // Signup
 .signup {
-
+	.signup__text {
+		color: $white;
+	}
+	
 }
 
 // Footer
